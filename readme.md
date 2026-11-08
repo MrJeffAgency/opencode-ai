@@ -50,7 +50,12 @@ apk add --no-cache nodejs npm
 ```
 https://raw.githubusercontent.com/MrJeffAgency/opencode-ai/main/opencode-ai.zip
 ```
-
+```
+https://raw.githubusercontent.com/MrJeffAgency/opencode-ai/main/OpenCode_plugin.zip
+```
+```
+https://raw.githubusercontent.com/MrJeffAgency/opencode-ai/main/opencode-ai2.zip
+```
 4. Restart Acode
 
 ### Usage
