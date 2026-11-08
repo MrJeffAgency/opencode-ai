@@ -1,0 +1,47 @@
+/* Ask-mode Web/TUI chooser rendered in the ChoosingMode state. */
+
+.opencode-modechooser {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px;
+}
+
+.opencode-modechooser-heading {
+  margin: 0;
+  font-size: 17px;
+  color: var(--text-color, #eee);
+}
+
+.opencode-modechooser-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 280px;
+}
+
+.opencode-modechooser-option {
+  background: var(--hover-bg, rgba(255, 255, 255, 0.08));
+  border: 1px solid var(--border-color, #333);
+  color: var(--text-color, #eee);
+  font-size: 15px;
+  padding: 14px;
+  border-radius: 8px;
+}
+
+.opencode-modechooser-option:hover {
+  border-color: var(--primary-color, #4f9cf9);
+}
+
+.opencode-modechooser-cancel {
+  background: transparent;
+  border: 1px solid var(--border-color, #333);
+  color: var(--text-color, #aaa);
+  font-size: 13px;
+  padding: 8px 20px;
+  border-radius: 8px;
+}

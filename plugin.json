@@ -1,0 +1,18 @@
+{
+  "$schema": "https://acode.app/schema/plugin/v0.1.0.json",
+  "id": "mrjeffagency.opencode",
+  "name": "OpenCode AI",
+  "main": "main.js",
+  "version": "1.1.6",
+  "readme": "readme.md",
+  "icon": "icon.png",
+  "changelogs": "changelogs.md",
+  "minVersionCode": 290,
+  "license": "MIT",
+  "keywords": ["ai", "coding", "agent", "opencode", "llm", "assistant", "terminal"],
+  "price": 0,
+  "author": {
+    "name": "MrJeffAgency",
+    "github": "MrJeffAgency"
+  }
+}
