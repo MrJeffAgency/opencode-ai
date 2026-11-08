@@ -12,7 +12,7 @@
 
 **Run the OpenCode AI coding agent inside Acode Editor**
 
-[Features](#features) • [Installation](#installation) • [Requirements](#requirements) • [Build](#build) • [Contributing](#contributing)
+[Features](#features) • [Requirements](#requirements) • [Installation](#installation) • [Troubleshooting](#troubleshooting) • [Contributing](#contributing)
 
 **OpenCode AI** is an Acode plugin that launches [OpenCode](https://github.com/anomalyco/opencode) — an AI coding agent — as a background HTTP server inside Acode's built-in Alpine Linux terminal, then embeds its web UI in a full-page iframe. Instead of running OpenCode on a separate machine, this plugin runs it locally on your device and talks to it over loopback, giving you a fully self-contained AI coding workflow inside Acode.
 
@@ -33,15 +33,45 @@ apk add --no-cache nodejs npm
 
 ## Installation
 
+### From the Plugins list
+
 1. Open **Settings**
 2. Select **Plugins**
 3. Search for **"OpenCode AI"**
 4. Tap **Install**
-5. Restart
+5. Restart Acode
 
-### Having trouble?
+### From a URL
 
-If the automatic install fails, you can run the installation commands manually in the terminal.
+1. Open **Settings** → **Plugins**
+2. Tap **+** (top right) and choose **REMOTE**
+3. Paste this URL and confirm:
+
+```
+https://raw.githubusercontent.com/MrJeffAgency/opencode-ai/main/opencode-ai.zip
+```
+
+4. Restart Acode
+
+### Usage
+
+Tap the **OpenCode** icon. The plugin checks for OpenCode, installs it if missing, starts the server and opens the web UI. The first launch can take a few minutes while it downloads.
+
+## Troubleshooting
+
+If the automatic install fails, run the commands yourself in Acode's terminal, then tap the OpenCode icon again:
+
+```bash
+apk add --no-cache nodejs npm libgcc libstdc++ ripgrep git
+npm install -g @opencode/cli
+opencode serve --port 4096 --hostname 127.0.0.1
+```
+
+- Type the hostname exactly as `127.0.0.1`, with no trailing dot.
+- **`opencode: not installed`**: the install was interrupted. Run `npm uninstall -g @opencode/cli`, then `npm install -g @opencode/cli`.
+- **`Database is not empty and has no session table`**: move the broken database aside with `mkdir -p ~/oc-backup && mv ~/.local/share/opencode/opencode.db* ~/oc-backup/`, then start again.
+- **Server won't stop or port 4096 is busy**: run `pkill -f "opencode serve"`.
+- `proot warning: can't sanitize binding` lines in the terminal are harmless.
 
 ### How It Works
 
@@ -76,6 +106,13 @@ src/
     components/         # DOM factory functions, one file per component
 ```
 
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request and leave a ⭐
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request and leave a ⭐
 
 ## Credits & Attribution
 
@@ -89,3 +126,9 @@ This project (the Acode OpenCode integration) is licensed under the MIT License.
 - **GitHub**: [MrJeffAgency](https://github.com/MrJeffAgency)
 
 ---
+
+<div align="center">
+
+_Happy coding ✨_
+
+</div>
