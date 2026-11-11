@@ -129,11 +129,3 @@ This project (the Acode OpenCode integration) is licensed under the MIT License.
 ## Support & Contact
 
 - **GitHub**: [MrJeffAgency](https://github.com/MrJeffAgency)
-
----
-
-<div align="center">
-
-_Happy coding ✨_
-
-</div>
