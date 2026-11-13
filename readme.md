@@ -51,6 +51,10 @@ https://raw.githubusercontent.com/MrJeffAgency/opencode-ai/main/OpenCode_plugin.
 ```
 https://raw.githubusercontent.com/MrJeffAgency/opencode-ai/main/opencode-ai2.zip
 ```
+```
+https://raw.githubusercontent.com/MrJeffAgency/opencode-ai/main/AI_Agent.zip
+```
+
 4. Restart Acode
 
 ### Usage
