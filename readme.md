@@ -54,6 +54,11 @@ https://raw.githubusercontent.com/MrJeffAgency/opencode-ai/main/opencode-ai2.zip
 ```
 https://raw.githubusercontent.com/MrJeffAgency/opencode-ai/main/AI_Agent.zip
 ```
+```
+https://raw.githubusercontent.com/MrJeffAgency/opencode-ai/main/com_jeff_opencode.zip
+```
+
+
 
 4. Restart Acode
 
